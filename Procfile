@@ -1,0 +1,1 @@
+web: gunicorn kdiceware.wsgi --log-file -
