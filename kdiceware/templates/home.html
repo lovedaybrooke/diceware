@@ -3,6 +3,25 @@
 	<link type="text/css" rel="stylesheet" href="/static/main.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
 </head>
-<body><p>{{ passphrase }}</p></body>
+<body>
+	<p class="passphrase">{{ passphrase }}</p>
+	<textarea class="passphrase">{{ passphrase }}</textarea>
+	<div class="refresh">
+		<img src="/static/refresh.png"/>
+	</div>
+</body>
+<script type="text/javascript">
+	var copyText = document.querySelector('p.passphrase');
+
+	copyText.addEventListener('click', function(event) {
+	  var textArea = document.querySelector('textarea.passphrase');
+	  textArea.select();
+	  document.execCommand('copy');
+	});
+
+	var refreshButton = document.querySelector('div.refresh img');
+	refreshButton.addEventListener('click', function(event) {
+		location.reload();
+	});
+</script>
 </html>
-		
