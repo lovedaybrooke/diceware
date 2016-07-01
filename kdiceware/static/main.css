@@ -13,6 +13,7 @@ p, textarea {
     outline: none;
     resize: none;
     text-align: center;
+    cursor: hand;
 }
 
 textarea {
