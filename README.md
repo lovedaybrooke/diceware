@@ -4,7 +4,7 @@ This is a simple app to generate passphrases using the [Diceware technique](http
 
 Diceware is a method of generating secure passphrases using, unsurprisingly, dice. 
 
-In this method, each word in the passphrase is generated through five dice rolls. The results of the rolls are concatenated to give a five-digit number, which corresponds to a word in the wordlist. Repeat this process six times to get a passphrase. ([Why six times?](http://world.std.com/~reinhold/dicewarefaq.html#howlong)).
+In this method, each word in the passphrase is generated through five dice rolls. The results of the rolls are concatenated to give a five-digit number, which corresponds to a word in the wordlist. Repeat this process seven times to get a passphrase. ([Why seven times?](http://world.std.com/~reinhold/dicewarefaq.html#howlong)).
 
 I made this online version because the other recommended 'short cut' wasn't very short:
 

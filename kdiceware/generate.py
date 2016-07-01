@@ -16,5 +16,6 @@ def makePassphrase():
         word_dict[randomDiceRoll()] + " " +
         word_dict[randomDiceRoll()] + " " +
         word_dict[randomDiceRoll()] + " " +
+        word_dict[randomDiceRoll()] + " " +
         word_dict[randomDiceRoll()]
         ][0]
