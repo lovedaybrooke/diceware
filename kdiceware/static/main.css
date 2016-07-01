@@ -16,14 +16,18 @@ p, textarea {
     cursor: hand;
 }
 
-textarea {
+textarea#successmessage {
+  font-size: 14px;
+  color: black;
+}
+
+textarea.passphrase {
     margin-top: -200px;
 }
 
 div.refresh {
     text-align: center;
     width: 550px;
-    margin: 20px 0px;
 }
 
 div.refresh img {
@@ -31,13 +35,13 @@ div.refresh img {
 }
 
 @media (max-width: 500px) {
-  textarea {
+  textarea.passphrase {
     width: 100%;
     font-size: 24px;
     margin-top: 0px;
   }
 
-  p {
+  p, textarea#successmessage {
     display: none;
   }
 

@@ -6,6 +6,7 @@
 <body>
 	<p class="passphrase">{{ passphrase }}</p>
 	<textarea class="passphrase">{{ passphrase }}</textarea>
+	<textarea id="successmessage"></textarea>
 	<div class="refresh">
 		<img src="/static/refresh.png"/>
 	</div>
@@ -19,6 +20,14 @@
 	  textArea.selectionStart=0;
 	  textArea.selectionEnd=textArea.value.length;
 	  document.execCommand('copy');
+	  
+	  var successMessage = document.querySelector('#successmessage');
+	  successMessage.value = 'Copied!';
+	  setTimeout(function () {
+	  	successMessage.value = '';
+	  }, 500);
+
+      
 	});
 	
 	// Mobile version
