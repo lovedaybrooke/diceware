@@ -11,11 +11,28 @@
 	</div>
 </body>
 <script type="text/javascript">
-	var copyText = document.querySelector('p.passphrase');
+	// Desktop version
+	var copyText = document.querySelector('p.passphrase')
 
 	copyText.addEventListener('click', function(event) {
 	  var textArea = document.querySelector('textarea.passphrase');
-	  textArea.select();
+	  textArea.selectionStart=0;
+	  textArea.selectionEnd=textArea.value.length;
+	  document.execCommand('copy');
+	});
+	
+	// Mobile version
+	// On mobile it isn't possible (or at least easy) to trigger
+	// a copy action. The best I can do is to select everything in
+	// the text area, and trigger the copy dialog to appear.
+	// This is only useful if the textarea is actually visible,
+	// so for mobile I've made the textarea appear, but the p hidden.
+	// As a result, the textarea must be the click trigger.
+	var textArea = document.querySelector('textarea.passphrase');
+	
+	textArea.addEventListener('click', function(event) {
+	  this.selectionStart=0;
+	  this.selectionEnd=textArea.value.length;
 	  document.execCommand('copy');
 	});
 

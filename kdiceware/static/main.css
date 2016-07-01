@@ -1,42 +1,47 @@
 body {
-	background-color: #fdf6e3;
-	padding: 30px 20px;
+    background-color: #fdf6e3;
+    padding: 30px 20px;
 }
 
-p {
-	width: 450px;
-	font-size: 20px;
-	color: #268bd2;
-	font-family: "courier",  "sans-serif";
-	background-color: #fdf6e3;
-	border: none;
-	outline: none;
-	resize: none;
-	text-align: center;
+p, textarea {
+    width: 450px;
+    font-size: 20px;
+    color: #268bd2;
+    font-family: "courier",  "sans-serif";
+    background-color: #fdf6e3;
+    border: none;
+    outline: none;
+    resize: none;
+    text-align: center;
 }
 
 textarea {
-	margin-top: -200px;
+    margin-top: -200px;
 }
 
 div.refresh {
-	text-align: center;
-	width: 450px;
-	margin: 20px 0px;
+    text-align: center;
+    width: 450px;
+    margin: 20px 0px;
 }
 
 div.refresh img {
-	padding: 10px;
+    padding: 10px;
 }
 
 @media (max-width: 500px) {
-  p {
-  	width: 100%;
-  	font-size: 30px;
+  textarea {
+    width: 100%;
+    font-size: 30px;
+    margin-top: 0px;
   }
+
+  p {
+    display: none;
+  }
+
 
   div.refresh {
-  	width: 100%;
+    width: 100%;
   }
 }
-
