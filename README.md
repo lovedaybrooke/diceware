@@ -1,5 +1,7 @@
 # diceware
 
+http://diceware.katmatfield.com
+
 This is a simple app to generate passphrases using the [Diceware technique](http://world.std.com/~reinhold/diceware.html).
 
 Diceware is a method of generating secure passphrases using, unsurprisingly, dice. 
